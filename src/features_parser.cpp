@@ -201,7 +201,6 @@ namespace NTFRParser {
             *outSharedPtr += currOutputStr;
             outSharedPtr->append(reinterpret_cast<const char *>(&data_masked_crc), sizeof(data_masked_crc));
             ind += 1;
-            if (ind % 5000 == 0) cout << "order: " << order << "ind: " << ind << endl;
         }
     }
 
